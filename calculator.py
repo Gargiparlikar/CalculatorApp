@@ -45,17 +45,11 @@ def click(event):
         Scvalue.set(Scvalue.get() + text)
         screen.update()
 
-
-
-#Making the screen for displaying the digits
 Scvalue = StringVar()
 Scvalue.set("")
-# border_color = Frame(root, background="red")
 screen = Entry(root, highlightthickness=5,textvar = Scvalue , font = "lucida 40 bold")
 screen.pack(fill="x", ipadx=10, ipady=10)
 
-
-#Making frames for buttons
 Frame1 = Frame(root, bg = "grey")
 b = Button(Frame1, padx =55, pady = 5,text="9", font = "lucida 10 bold", bg ="red")
 b.pack(side = LEFT,padx =5, pady = 5)
